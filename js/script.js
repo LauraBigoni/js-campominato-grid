@@ -56,12 +56,12 @@ function createCell(cells) {
 
     for (let i = 0; i < totalCells; i++) {
         const cell = document.createElement('div');
-        cell.className = 'cell';
+        cell.className = 'cell justify-content-center';
         cell.style.width = `calc(100% / ${cells})`;
         cell.style.height = `calc(100% / ${cells})`;
         const cellNumber = getRandomNumber(1,100, extractedNumbers)
         extractedNumbers.push(cellNumber);
-        cell.innerText = cellNumber;
+        cell.innerHTML = `<span>${cellNumber}</span>`;
 
         cell.addEventListener('click', function () {
             cell.classList.toggle('clicked')
