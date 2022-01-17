@@ -16,21 +16,21 @@ Le validazioni e i controlli in un secondo momento.
 
 // # FUNZIONI
 function changeMode() {
+    // # Recupero i valori delle opzioni di difficoltà
+
     let x = document.getElementById("game-difficulty").value;
     document.getElementById("choice").innerHTML = `Hai scelto: <strong>${x}</strong>`;
 }
 
 // # Recupero gli elementi in pagina
 const difficulty = document.getElementById('game-difficulty').addEventListener("change", changeMode);
+const game = document.getElementById('game');
 
-// # Recupero i valori delle opzioni di difficoltà
+// # Alla scelta della difficoltà genero una griglia di gioco
+if (difficulty === 'easy mode') {
 
-    // # Calcolo il prezzo del biglietto e mostro in pagina i risultati
-    // if (gamedifficulty === '1') {
+} else if (difficulty === 'normal mode') {
 
-    // } else if (gamedifficulty === '2') {
+} else if (difficulty === 'hard mode') {
 
-    // } else if (gamedifficulty === '3') {
-
-    // }
-// });
+};
