@@ -3,9 +3,28 @@
 }
 
 body {
-    background-color: #d1effd;
+    background-color: #ffffe9;
 }
 
 #nav-menu {
     background-color: #ffc3ff;
+}
+
+#game {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(34, 34, 34);
+}
+
+#game .cell {
+    cursor: pointer;
+    border:1px solid black;
+}
+
+#game .cell.clicked {
+    background-color: lightblue;
 }

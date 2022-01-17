@@ -25,7 +25,8 @@
                 </div>
                 <div class="col-6">
                     <label for="game-difficulty">Seleziona la difficoltà: </label>
-                    <select id="game-difficulty" class="pb-1">
+                    <select id="game-difficulty">
+                        <option>---</option>
                         <option value="easy mode">Easy mode</option>
                         <option value="normal mode">Normal mode</option>
                         <option value="hard mode">Hard mode</option>
@@ -36,10 +37,10 @@
     </header>
     <main>
         <div class="container">
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-12">
-                    <h1 id="choice" class="text-center py-4"></h1>
-                    <div id="game"></div>
+                    <h1 id="choice" class="py-4"></h1>
+                    <div id="game" class="fs-1"></div>
                 </div>
             </div>
         </div>
